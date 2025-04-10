@@ -1,0 +1,190 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+:root {
+  
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  width: 100%;
+  max-width: none; /* Remove max-width limit */
+  margin: 0;
+  padding: 0;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+
+
+.navb {
+  width: 100%;  /* Full width */
+   /* Adjust height as needed */
+  background-color: #2c3e50;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right:0;
+  padding: 20px;
+  z-index: 15
+}
+
+/* ✅ Navbar Items */
+.navb .a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 20px;
+  transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+  height: 56px;
+  color: #fff !important;
+  text-transform: uppercase;
+  padding: 1rem !important;
+}
+.navb .a:hover {
+  color: black !important; 
+  transform: scale(1.1);  
+}
+.navb .a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 20px;
+  transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+  height: 56px;
+  color: #fff !important;
+  text-transform: uppercase;
+  padding: 1rem !important;
+}
+.navb .a:focus {
+  @apply bg-teal-500 rounded-md
+}
+
+.navbar-brand {
+  margin-right: 1rem;
+  padding-bottom: .3125rem;
+  padding-top: .3125rem;
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 1.6rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 1px !important;
+    padding-block: 1.7rem !important;
+}
+.fsection h1{
+  line-height: 1.2;
+  margin-bottom: .5rem;
+
+    font-weight: 700 !important;
+    letter-spacing: 1px !important;
+    padding-block: 1.7rem !import
+}
+.Portfolio h1{
+  color: #2c3e50;
+  font-size: 3rem !important;
+  font-weight: 700 !important;
+
+}
+.Portfolio i{
+  color: #2c3e50;
+  font-size: 30px !important;
+  font-weight: 700 !important;
+  display:  block;
+  position:relative;
+  width: 50px;  /* Corrected from "weight" to "width" */
+  background-color: transparent;
+  z-index:5;
+
+}
+.items .hover{
+  @apply absolute top-0 left-0 w-full h-full bg-teal-500 opacity-0 group-hover:opacity-70 rounded-md transition duration-300 flex justify-center items-center
+}
+.items .hover i{
+  color: #fff;
+  font-weight:500;
+  font-size: 3rem !important;
+
+}
+
+.About{
+  background-color: #1abc9c;
+}
+.About h1{
+  font-size: 3rem !important;
+  font-weight: 700 !important;
+}
+.About .sec{
+  @apply text-white w-full lg:w-1/2 leading-[2rem] p-5 text-xl
+  
+}
+
+
+.Contactme h1{
+  color: #2c3e50;
+  font-size: 3rem !important;
+  font-weight: 700 !important;
+}
+.form input{
+  @apply p-3 mb-3 border-0 w-full  focus:outline-none focus:ring-0 ;
+  color: #212529;
+  font-size:1.5rem;
+  font-weight:400;
+  line-height:1.5
+}
+.form button{
+  @apply px-10 py-5 bg-teal-500  text-white border-0 focus:outline-0 hover:bg-teal-600 focus:bg-blue-700;
+  font-size:1.3rem;
+  font-weight:500;
+  line-height:1.5;
+}
+.Fp h2{
+  @Apply lg:text-xl font-bold;
+
+
+}
+.Fp{
+  background-color:#2c3e50;
+}
+.Fp i {
+  @apply flex items-center justify-center lg:w-48 hover:bg-white hover:text-gray-800 transition duration-300 ;
+  border-radius:50%;
+  border:2px white solid;
+  height:50px;
+  width:50px;
+}
+
+.popup h1{
+  font-size: 2rem;
+  font-weight:700;
+  
+}
+.content button.bttn{
+  background-color:transparent;
+  border:0;
+  color:black;
+}
+.content button.bttn:focus{
+  background-color:white;
+    
+}
