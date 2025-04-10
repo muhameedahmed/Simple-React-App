@@ -5,12 +5,12 @@ import Popup from "./Popup";
 export default function Portfolio() {
   const [isopen, Setopen] = useState(false);
   const [imgSrc, Setsrc] = useState([
-    "/imgs/cabin.png",
-    "/imgs/cake.png",
-    "/imgs/circus.png",
-    "/imgs/game.png",
-    "/imgs/safe.png",
-    "/imgs/submarine.png",
+    import.meta.env.BASE_URL + "imgs/cabin.png",
+    import.meta.env.BASE_URL + "imgs/cake.png",
+    import.meta.env.BASE_URL + "imgs/circus.png",
+    import.meta.env.BASE_URL + "imgs/game.png",
+    import.meta.env.BASE_URL + "imgs/safe.png",
+    import.meta.env.BASE_URL + "imgs/submarine.png",
   ]);
   const [Title, Settitle] = useState([
     "LOG CABIN",
