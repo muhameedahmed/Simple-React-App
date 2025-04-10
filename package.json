@@ -3,9 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://muhameedahmed/REACT_APP",
+  "homepage": "https://muhameedahmed.github.io/REACT_APP",
   "scripts": {
-    
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
