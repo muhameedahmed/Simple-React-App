@@ -15,7 +15,7 @@ function App() {
           <Route path="contact" element={<Contactme />} />
           <Route path="about" element={<About />} />
           <Route path="portfolio" element={<Portfolio />} />
-          <Route path="*" element={<Errorpage />} />
+          <Route path="*" element={<Errorpage/>} />
         </Route>
       </Routes>
     </HashRouter>
