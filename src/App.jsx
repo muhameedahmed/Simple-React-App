@@ -17,7 +17,7 @@ function App() {
 
  let Brouter= createBrowserRouter([
     {path:'' ,element:<Layout/> ,children:[
-      {index:true,element:<Fpage/>},
+      {path:'Simple-React-App',element:<Fpage/>},
       {path:'contact',element:<Contactme/>},
       {path:'About',element:<About/>},
       {path:'Portfolio',element:<Portfolio/>},
